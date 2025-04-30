@@ -1,5 +1,6 @@
 import { Syne as FontSyne, Source_Sans_3 as Fontsans } from "next/font/google";
 import "./globals.css";
+import NavigationBar from "@/components/common/NavigationBar";
 
 
 const fontsans = Fontsans({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         className={`${fontsans.variable} ${fontSyne.variable} font-sanss font-syne antialiased`}
       >
         <div className="bg relative flex min-h-screen flex-col text-white">
+          <NavigationBar/>
           
           <main className="flex-1">{children}</main>
           
